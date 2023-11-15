@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="1.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div id="hai">
+                <h2 >MINU.</h2>  
+            </div>              
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi,I'am <span>Minu..</span> <br>from Kerala</h1>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="17.jpg" alt="" height="600px" width="200px">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iusto ea beatae natus architecto commodi officiis ab quia sapiente error dolor modi, adipisci libero excepturi perferendis recusandae, delectus molestias sint.</p>
+                
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('project')">Project</p>
+                </div>
+                 <!---education--->
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>BTech(2020-2023)</span><br>Computer Science and Engineering<br>College of Engineering,Kidangoor<BR>CGPA-7.59<br></li>
+                        <li><span>Diploma(2017-2020)</span><br>Computer Engineering<br>Government Polytechnic College,Chelakkara<BR>CGPA-8.12<br></li>
+                        <li><span>Plustwo</span><br>Bio-Science<br>SMTGHSS,Chelakkara<BR>Percentage-70<br></li>
+                        <li><span>SSLC</span><br>SMTGHSS,Chelakkara<BR>Percentage-90<br></li>
+                    </ul>
+                </div>
+                <!---skills--->
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Hard Skills</span><br>CPP<br>CSS3<BR>javascript<br>php<br>python<br>HTML5<br>OPPs concept<br>c#<br>ASP.NET<BR></li>
+                        <li><span>Soft Skills</span><br>Time Management<br>Leadership<BR>Teamwork<br></li>
+            
+                        </ul>
+                </div>
+
+                <!---PROJECT--->
+                <div class="tab-contents" id="project">
+                    <ul>
+                        <li><span>Fake Profile Detection in Social media</span><br> Detect the accounts is fake or not by using machine learning algorithms.<BR></li>
+                        <li><span>Hospital Management</span><br>Hospital management manage all hospital records and patients can view all reports and book an appointment through online.<br></li>
+            
+                        </ul>
+                </div>
+               
+                
+                
+                </div>
+            </div>
+        </div>
+    </div>
+   <script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+  function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+
+    }
+    event.currentTarget.classList.add("active-link");
+  }
+   </script> 
+</body>
+</html>

@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/c56d12c11d.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <div id="hai">
-                <h2 >MINU.</h2>  
+                <h2 id="hi">MINU.</h2>  
             </div>              
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">service</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#header">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">project</a></li>
+                    <li><a href="#certificate">certificates</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </nav>
             <div class="header-text">
@@ -35,21 +36,21 @@
                     <img src="picture1.jpg" alt="" height="600px" width="200px">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub">About Me</h1>
+                    <h1 class="sub-title">About Me</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit iusto ea beatae natus architecto commodi officiis ab quia sapiente error dolor modi, adipisci libero excepturi perferendis recusandae, delectus molestias sint.</p>
                 
                 <div class="tab-titles">
                     <p class="tab-links active-link" onclick="opentab('education')">Education</p>
                     <p class="tab-links" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links" onclick="opentab('project')">Project</p>
+                    <p class="tab-links" onclick="opentab('project')">Achievements</p>
                 </div>
                  <!---education--->
                 <div class="tab-contents active-tab" id="education">
                     <ul>
                         <li><span>BTech(2020-2023)</span><br>Computer Science and Engineering<br>College of Engineering,Kidangoor<BR>CGPA-7.59<br></li>
                         <li><span>Diploma(2017-2020)</span><br>Computer Engineering<br>Government Polytechnic College,Chelakkara<BR>CGPA-8.12<br></li>
-                        <li><span>Plustwo</span><br>Bio-Science<br>SMTGHSS,Chelakkara<BR>Percentage-70<br></li>
-                        <li><span>SSLC</span><br>SMTGHSS,Chelakkara<BR>Percentage-90<br></li>
+                        <li><span>Plustwo(2015-2017)</span><br>Bio-Science<br>SMTGHSS,Chelakkara<BR>Percentage-70<br></li>
+                        <li><span>SSLC(2015)</span><br>SMTGHSS,Chelakkara<BR>Percentage-90<br></li>
                     </ul>
                 </div>
                 <!---skills--->
@@ -76,6 +77,95 @@
             </div>
         </div>
     </div>
+    <!--project-->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div>
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h2 id="a1">ONLINE COFFEESHOP SYSTEM</h2>
+                    <P>The Online-Coffee Shop System is based on a concept to maintain the table booking, food ordering and applying job in to that particular coffee shop. There are four sections in this project admin panel, table booking, food ordering and applying job. In this system two type of users such as admin and user. The users are two types one of them is job seekers and other is customers. By selecting coffee order the system displays a list of available drinks and foods the user has to place an order with item quantity. After that, he/she proceeds towards order confirmation and payment methods. Online-Coffee Shop System in ASP.NET consists following modules such as login module, customer module, administrator module. This project is developed in ASP.NET using C# language and MSSQL database is used. The role of the administrator is to maintain customer information including operations like modifying, deleting, updating the customer records, customer order records and job application in the system.</P>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <h2 id="a1">FAKE</h2>
+                    <P>The Online-Coffee Shop System is based on a concept to maintain the table booking, food ordering and applying job in to that particular coffee shop. There are four sections in this project admin panel, table booking, food ordering and applying job. In this system two type of users such as admin and user. The users are two types one of them is job seekers and other is customers. By selecting coffee order the system displays a list of available drinks and foods the user has to place an order with item quantity. After that, he/she proceeds towards order confirmation and payment methods. Online-Coffee Shop System in ASP.NET consists following modules such as login module, customer module, administrator module. This project is developed in ASP.NET using C# language and MSSQL database is used. The role of the administrator is to maintain customer information including operations like modifying, deleting, updating the customer records, customer order records and job application in the system.</P>
+                </div>
+                <div>
+                    <i class="fa-solid fa-stethoscope"></i>
+                    <h2 id="a1">hospital</h2>
+                    <P>The Online-Coffee Shop System is based on a concept to maintain the table booking, food ordering and applying job in to that particular coffee shop. There are four sections in this project admin panel, table booking, food ordering and applying job. In this system two type of users such as admin and user. The users are two types one of them is job seekers and other is customers. By selecting coffee order the system displays a list of available drinks and foods the user has to place an order with item quantity. After that, he/she proceeds towards order confirmation and payment methods. Online-Coffee Shop System in ASP.NET consists following modules such as login module, customer module, administrator module. This project is developed in ASP.NET using C# language and MSSQL database is used. The role of the administrator is to maintain customer information including operations like modifying, deleting, updating the customer records, customer order records and job application in the system.</P>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="certificate">
+        <div class="container">
+            <h1 class="sub-title">Certificates</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="certificate4.png" alt="img">
+                    <div class="layer">
+                        <p>Published a paper entitled “FAKE 
+                            PROFILE DETECTION IN TWITTER” in International Research 
+                            Journal Of Modernization In Engineering Technology And Science 
+                            (IRJMETS), Volume 05, Issue 06, June 2023.</p>
+                            <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="certificate1.jpg" alt="img">
+                    <div class="layer">
+                        <p>Completing a bootcamp on Python and Machine Learning by ShapeAI in collaboration with Google Developer Group.</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+                </div>
+                </div>
+
+                <div class="work">
+                    <img src="certificate2.jpg" alt="img">
+                    <div class="layer">
+                        <p>Completing a workshop on UI-UX Design  conducted by IEEE in College of Engineering,Kidangoor.</p>
+                        <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+
+                </div>
+                </div>
+
+                <div class="work">
+                    <img src="certificate3.jpeg" alt="img">
+                    <div class="layer">
+                        <p>Published a paper entitled “FAKE 
+                            PROFILE DETECTION IN Social Media” in National Conference on Research in Emerging Areas from 26th to 28th April 2023.</p>
+                            <a href="#"><i class="fa-solid fa-square-up-right"></i></a>
+
+                </div>
+            </div>
+
+            <!----contact-->
+                <div id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="contact">
+                                <h1 class="sub-title">Contact</h1>
+                                <p><i class="fa-solid fa-paper-plane"></i>ksminu24@gmail.com</p>
+                                <p><i class="fa-solid fa-phone"></i>9846296704</p>
+                                <div class="social-icons">
+                                    <a href="https://github.com/Minu246"><i class="fa-brands fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!----certificates-->
+    <!---for about-->
    <script>
     var tablinks=document.getElementsByClassName("tab-links");
     var tabcontents=document.getElementsByClassName("tab-contents");
@@ -92,5 +182,8 @@
     document.getElementById(tabname).classList.add("active-tab");
   }
    </script> 
+
+   <!---end section-->
+   
 </body>
 </html>
